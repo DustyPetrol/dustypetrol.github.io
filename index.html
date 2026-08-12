@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petr Lavrenovs Portfolio</title>
+    <meta
+      name="description"
+      content="Project notes and supporting material for the resume of Petr Lavrenovs."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>Petr Lavrenovs Portfolio</h1>
+        <p class="subtitle">
+          Project notes, photos, and supporting material for my resume.
+        </p>
+        <p class="nav">
+          <a href="#projects">Projects</a> |
+          <a href="#hackathon">HSHL Hackathon 2025</a> |
+          <a href="#mqtt">MQTT Christmas Lights</a> |
+          <a href="#dsafe">DSafe Modules</a> |
+          <a href="#gaming-console">Gaming Console</a> |
+          <a href="#plant-watering">Plant Watering</a> |
+          <a href="#moodle-h5p-versioning">Moodle H5P Plugin</a> |
+          <a href="#school-practicum">School Practicum</a> |
+          <a href="https://github.com/dustypetrol">GitHub</a>
+        </p>
+      </header>
+
+      <main>
+        <section class="intro">
+          <h2>About This Page</h2>
+          <p>
+            This is a small project archive meant to support my resume. Each
+            entry gives enough context to show what I worked on, what tools were
+            involved, and what kind of responsibility I had.
+          </p>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+          <table class="project-table">
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Keywords</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#hackathon">HSHL Hackathon 2025: Robot Competition</a></td>
+                <td>March 2025</td>
+                <td>Event / competition</td>
+                <td>Arduino, sensors, servos, task design, scoring</td>
+              </tr>
+              <tr>
+                <td><a href="#mqtt">MQTT Christmas Lights Workshop</a></td>
+                <td>Dec. 2024 / Dec. 2025</td>
+                <td>Workshop pilot</td>
+                <td>Arduino Nano ESP32, Wi-Fi, MQTT, LEDs</td>
+              </tr>
+              <tr>
+                <td><a href="#dsafe">DSafe Modules</a></td>
+                <td>2024-2026</td>
+                <td>Educational content viewer</td>
+                <td>H5P, static web page, interactive learning content</td>
+              </tr>
+              <tr>
+                <td><a href="#gaming-console">Arduino-based Gaming Console</a></td>
+                <td>SS2024</td>
+                <td>Embedded game project</td>
+                <td>Arduino, C++, display, rotary encoder, buttons</td>
+              </tr>
+              <tr>
+                <td><a href="#plant-watering">Automatic Plant Watering System</a></td>
+                <td>SS2026</td>
+                <td>University embedded systems project</td>
+                <td>ESP32-C3, Raspberry Pi, MQTT, Flask, sensors, pumps</td>
+              </tr>
+              <tr>
+                <td><a href="#moodle-h5p-versioning">Moodle H5P Content Bank Versioning</a></td>
+                <td>Prototype</td>
+                <td>Moodle plugin</td>
+                <td>PHP, Moodle, H5P, Content Bank, version tracking</td>
+              </tr>
+              <tr>
+                <td><a href="#school-practicum">School Practicum: Classroom Technology Support</a></td>
+                <td>Oct. 2025 - Feb. 2026</td>
+                <td>Teaching / classroom support</td>
+                <td>Lesson preparation, slides, digital tools, AI demos</td>
+              </tr>
+            
+            </tbody>
+          </table>
+        </section>
+
+        <section id="hackathon" class="project">
+          <h2>HSHL Hackathon 2025: Robot Competition</h2>
+
+          <table class="facts">
+            <tbody>
+              <tr>
+                <th>Place</th>
+                <td>Hochschule Hamm-Lippstadt</td>
+              </tr>
+              <tr>
+                <th>Date</th>
+                <td>19-21 March 2025</td>
+              </tr>
+              <tr>
+                <th>Role</th>
+                <td>
+                  Co-organizer with
+                  <a href="https://github.com/eggcitedraccoon">Oleg Kelner</a>
+                  (<a href="https://github.com/eggcitedraccoon">@eggcitedraccoon</a>)
+                </td>
+              </tr>
+              <tr>
+                <th>Format</th>
+                <td>Three-day Arduino prototyping competition</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Summary</h3>
+          <p>
+            We organized and delivered a three-day engineering competition where
+            student teams built physical Arduino prototypes. The event combined
+            electronics, mechanical construction, programming, debugging, and
+            time-limited task planning.
+          </p>
+          <p>
+            The competition used a shared component box for each team. The box
+            included Arduino Uno boards, a breadboard, keypad, servo motors,
+            buttons, photoresistors, RGB LED, piezo speaker, IR sensors,
+            display, potentiometers, and radio modules.
+          </p>
+
+
+          <h3>Challenge Set</h3>
+          <table class="challenge-table">
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Idea</th>
+                <th>Hardware / concepts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Post Terminal</td>
+                <td>Servo-controlled equipment cabinet with user/admin codes.</td>
+                <td>Keypad, buttons, RGB LED, photoresistors, servos</td>
+              </tr>
+              <tr>
+                <td>Sunflower</td>
+                <td>Platform that follows a light source.</td>
+                <td>Photoresistors, 360-degree servo, timing, feedback</td>
+              </tr>
+              <tr>
+                <td>Cake Sort</td>
+                <td>Automatic sorting station for marked objects.</td>
+                <td>IR sensors, servo gates, display, counting logic</td>
+              </tr>
+              <tr>
+                <td>MegaOhm</td>
+                <td>Learning device for resistor color codes and measurement.</td>
+                <td>Potentiometers, display, resistor measurement, RGB feedback</td>
+              </tr>
+              <tr>
+                <td>Radio Morse</td>
+                <td>Morse transmitter and receiver, later extended wirelessly.</td>
+                <td>Buttons, radio modules, display, reliability checks</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Selected Photos</h3>
+          <div class="gallery">
+            <figure>
+              <a href="assets/hackathon-prototypes.jpg">
+                <img
+                  src="assets/hackathon-prototypes.jpg"
+                  alt="Hackathon prototypes built from cardboard, electronics, and Arduino parts"
+                >
+              </a>
+              <figcaption>Prototype builds during the competition.</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/hackathon-mentoring.jpg">
+                <img
+                  src="assets/hackathon-mentoring.jpg"
+                  alt="Participants discussing servo timing and control logic at a whiteboard"
+                >
+              </a>
+              <figcaption>Debugging and explaining control logic.</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/hackathon-sunflower.jpg">
+                <img
+                  src="assets/hackathon-sunflower.jpg"
+                  alt="Sunflower-shaped light tracking prototype near a window"
+                >
+              </a>
+              <figcaption>Sunflower light-tracking task prototype.</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/hackathon-circuit.jpg">
+                <img
+                  src="assets/hackathon-circuit.jpg"
+                  alt="Breadboard circuit with display, potentiometers, servos, and wiring"
+                >
+              </a>
+              <figcaption>Arduino circuit workbench.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="mqtt" class="project">
+          <h2>MQTT Christmas Lights Workshop</h2>
+
+          <table class="facts">
+            <tbody>
+              <tr>
+                <th>Date</th>
+                <td>December 2024 and December 2025</td>
+              </tr>
+              <tr>
+                <th>Format</th>
+                <td>Small workshop pilot sessions</td>
+              </tr>
+              <tr>
+                <th>Attendance</th>
+                <td>Tested with one participant in 2024 and two participants in 2025</td>
+              </tr>
+              <tr>
+                <th>Platform</th>
+                <td>Arduino Nano ESP32, LEDs, Wi-Fi, MQTT</td>
+              </tr>
+              <tr>
+                <th>Role</th>
+                <td>
+                  Co-organizer with
+                  <a href="https://github.com/eggcitedraccoon">Oleg Kelner</a>
+                  (<a href="https://github.com/eggcitedraccoon">@eggcitedraccoon</a>)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Summary</h3>
+          <p>
+            This workshop teaches participants to build a small Christmas-tree
+            LED device and control it through MQTT messages. The material starts
+            with basic electronics and ends with networked device behavior.
+          </p>
+          <p>
+            It is a designed and pilot-tested workshop, not
+            as a large public event. The sessions were small, partly because the
+            announcements did not reach potential participants as planned.
+          </p>
+
+          <h3>Workshop Content</h3>
+          <ul>
+            <li>LEDs, breadboards, resistors, and basic wiring.</li>
+            <li>Arduino Nano ESP32 setup and simple LED behavior.</li>
+            <li>Wi-Fi connection handling and connection-status checks.</li>
+            <li>MQTT publish/subscribe communication through a broker.</li>
+          </ul>
+
+          <h3>Selected Workshop Material</h3>
+          <div class="gallery">
+            <figure>
+              <a href="assets/mqtt-kit.jpg">
+                <img
+                  src="assets/mqtt-kit.jpg"
+                  alt="Workshop kit with breadboard, Arduino Nano ESP32, LEDs, cable, and tree model"
+                >
+              </a>
+              <figcaption>Prepared workshop kit.</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/mqtt-tree-render.jpg">
+                <img
+                  src="assets/mqtt-tree-render.jpg"
+                  alt="Rendered Christmas tree enclosure and electronics base"
+                >
+              </a>
+              <figcaption>Christmas-tree model and base.</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/mqtt-circuit.png">
+                <img
+                  src="assets/mqtt-circuit.png"
+                  alt="Circuit diagram for an Arduino Nano ESP32 connected to an LED"
+                >
+              </a>
+              <figcaption>Beginner wiring diagram.</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/mqtt-led-test.jpg">
+                <img
+                  src="assets/mqtt-led-test.jpg"
+                  alt="LED brightness test on a breadboard"
+                >
+              </a>
+              <figcaption>LED test setup.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="dsafe" class="project">
+          <h2>DSafe Modules</h2>
+
+          <table class="facts">
+            <tbody>
+              <tr>
+                <th>Link</th>
+                <td><a href="https://dustypetrol.github.io/DSafe-Modules/">dustypetrol.github.io/DSafe-Modules</a></td>
+              </tr>
+              <tr>
+                <th>Purpose</th>
+                <td>Viewing H5P content that I developed and used in H5P</td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Small public project page / educational content viewer</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Summary</h3>
+          <p>
+            DSafe Modules is a simple page for viewing interactive H5P learning
+            content that I developed as a research assistant in HSHL. 
+          </p>
+    
+        </section>
+
+        <section id="gaming-console" class="project">
+          <h2>Arduino-based Gaming Console</h2>
+
+          <table class="facts">
+            <tbody>
+              <tr>
+                <th>Repository</th>
+                <td><a href="https://github.com/DustyPetrol/Gaming-Console">github.com/DustyPetrol/Gaming-Console</a></td>
+              </tr>
+              <tr>
+                <th>Collaborator</th>
+                <td>                  <a href="https://github.com/eggcitedraccoon">Oleg Kelner</a>
+                  (<a href="https://github.com/eggcitedraccoon">@eggcitedraccoon</a>)</td>
+              </tr>
+              <tr>
+                <th>Platform</th>
+                <td>Arduino-based handheld-style console</td>
+              </tr>
+              <tr>
+                <th>Inputs / output</th>
+                <td>280x240 display, rotary encoder, and two buttons</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Summary</h3>
+          <p>
+            This project is an Arduino-based gaming console that runs on a
+            custom-built hardware setup with a small screen, rotary encoder, and
+            buttons. The software includes a main menu, two playable games, and
+            a shared settings menu for changing difficulty and display-related
+            options.
+          </p>
+          <p>
+            The two implemented games are Hangman and Bulls and Cows. Hangman
+            uses letter-by-letter input and game-state drawing on the display.
+            Bulls and Cows generates a hidden number and gives feedback through
+            bulls and cows counts until the player guesses the correct number.
+          </p>
+
+
+
+          <h3>Selected Images From Documentation</h3>
+          <div class="gallery contain-gallery">
+            <figure>
+              <a href="assets/gaming-console-hardware.jpg">
+                <img
+                  src="assets/gaming-console-hardware.jpg"
+                  alt="Arduino-based gaming console hardware with screen, rotary encoder, and two buttons"
+                >
+              </a>
+              <figcaption>Built console hardware.</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/gaming-hangman-screens.jpg">
+                <img
+                  src="assets/gaming-hangman-screens.jpg"
+                  alt="Hangman menu and gameplay screens from the Arduino gaming console"
+                >
+              </a>
+              <figcaption>Main menu and Hangman screens.</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/gaming-bulls-settings-screens.jpg">
+                <img
+                  src="assets/gaming-bulls-settings-screens.jpg"
+                  alt="Bulls and Cows and settings screens from the Arduino gaming console"
+                >
+              </a>
+              <figcaption>Bulls and Cows plus settings screens.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="plant-watering" class="project">
+          <h2>Automatic Plant Watering System</h2>
+
+          <table class="facts">
+            <tbody>
+              <tr>
+                <th>Repository</th>
+                <td><a href="https://github.com/eggcitedraccoon/SS2026_AES_Lab_B4">github.com/eggcitedraccoon/SS2026_AES_Lab_B4</a></td>
+              </tr>
+              <tr>
+                <th>Context</th>
+                <td>University project, SS2026 AES Lab B4</td>
+              </tr>
+              <tr>
+                <th>System</th>
+                <td>IoT-based automatic plant watering system for indoor plants</td>
+              </tr>
+              <tr>
+                <th>Main parts</th>
+                <td>Raspberry Pi 3B+, ESP32-C3 units, sensors, relays, pumps, and local dashboard</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Summary</h3>
+          <p>
+            This university project is an automatic plant watering system. It
+            monitors soil moisture, temperature, humidity, and water level, then
+            waters plants through pumps when needed. The system is designed for
+            indoor environments such as homes or offices.
+          </p>
+          <p>
+            The architecture combines embedded watering stations with a central
+            Raspberry Pi controller. ESP32-C3 firmware reads sensors, controls a
+            relay-driven pump, and communicates through MQTT. A local Flask
+            dashboard on the Raspberry Pi receives device data, shows plant
+            status, and can request actions such as manual watering or status
+            updates.
+          </p>
+
+          <h3>Selected Images</h3>
+          <div class="gallery contain-gallery">
+            <figure>
+              <a href="assets/plant-watering-station.jpg">
+                <img
+                  src="assets/plant-watering-station.jpg"
+                  alt="Automatic plant watering station with pump, relay board, ESP module, and soil moisture sensor"
+                >
+              </a>
+              <figcaption>Watering station hardware setup.</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/plant-watering-soldering.jpg">
+                <img
+                  src="assets/plant-watering-soldering.jpg"
+                  alt="Soldered underside of the plant watering station prototype board"
+                >
+              </a>
+              <figcaption>Soldered prototype board underside.</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/plant-watering-schematic.jpg">
+                <img
+                  src="assets/plant-watering-schematic.jpg"
+                  alt="Whiteboard schematic for relay, pump, ESP32, water level sensor, and soil moisture sensor wiring"
+                >
+              </a>
+              <figcaption>Early wiring and power schematic.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="moodle-h5p-versioning" class="project">
+          <h2>Moodle H5P Content Bank Versioning</h2>
+
+          <table class="facts">
+            <tbody>
+              <tr>
+                <th>Repository</th>
+                <td><a href="https://github.com/DustyPetrol/moodle-h5p-contentbank-versioning">github.com/DustyPetrol/moodle-h5p-contentbank-versioning</a></td>
+              </tr>
+              <tr>
+                <th>Status</th>
+                <td>Plugin prototype</td>
+              </tr>
+              <tr>
+                <th>Plugin type</th>
+                <td>Moodle local plugin: <code>local_h5pversioning</code></td>
+              </tr>
+              <tr>
+                <th>Main idea</th>
+                <td>Controlled version tracking for H5P content in Moodle's Content Bank</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Summary</h3>
+          <p>
+            This is a prototype Moodle local plugin I built for tracking
+            versions of H5P content in the Moodle Content Bank. The goal is to
+            support a central development workflow: one configured development
+            course acts as the source of truth, while course-local copies or
+            remixes do not pollute the main version history.
+          </p>
+          <p>
+            The plugin listens for Moodle Content Bank events, checks whether
+            the affected item is H5P content, compares file hashes, and creates
+            a new snapshot only when the actual H5P file bytes change. It also
+            keeps event-level logs so an administrator can see when a snapshot
+            was created, when a duplicate save was skipped, or when content was
+            ignored.
+          </p>
+
+          <h3>What It Includes</h3>
+          <ul>
+            <li>Event observer wiring for Content Bank create, upload, and update events.</li>
+            <li>Versioning service logic for resolving H5P items and comparing file hashes.</li>
+            <li>Snapshot storage using Moodle-managed file storage.</li>
+            <li>Admin report page for event decisions and version history.</li>
+            <li>Download support for stored H5P snapshots.</li>
+            <li>Database schema and upgrade structure for Moodle installation.</li>
+          </ul>
+
+        </section>
+
+        <section id="school-practicum" class="project">
+          <h2>School Practicum: Classroom Technology Support</h2>
+
+          <table class="facts">
+            <tbody>
+              <tr>
+                <th>Context</th>
+                <td>Mandatory HSHL school internship / practicum</td>
+              </tr>
+              <tr>
+                <th>School</th>
+                <td>Grundschulverbund Brinkmannschule - Schmeddingschule</td>
+              </tr>
+              <tr>
+                <th>Location</th>
+                <td>Langenberg, Germany</td>
+              </tr>
+              <tr>
+                <th>Date</th>
+                <td>13 October 2025 - 6 February 2026</td>
+              </tr>
+              <tr>
+                <th>Format</th>
+                <td>Classroom support, lesson material, slides, demonstrations, and guided exercises</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Summary</h3>
+          <p>
+            During this mandatory HSHL school practicum at Grundschulverbund
+            Brinkmannschule - Schmeddingschule in Langenberg, Germany, I
+            supported classroom work around technology and prepared learning
+            material that could be used with pupils. The work included lesson
+            preparation, slide-based explanations, classroom demonstrations, and
+            guided exercises.
+          </p>
+          <p>
+            A useful part of the practicum was translating technical subjects
+            into activities that pupils could actually try. Instead of only
+            explaining concepts verbally, I used interactive tools and simple
+            experiments to make the ideas easier to understand and discuss.
+          </p>
+
+
+          <h3>What I Did</h3>
+          <ul>
+            <li>Prepared lesson material, slides, and classroom explanations for technology topics.</li>
+            <li>Supported pupils during exercises and helped answer technical questions.</li>
+            <li>Guided pupils through experiments, discussion questions, and small hands-on tasks.</li>
+            <li>Adapted explanations to the pupils' level instead of relying only on technical vocabulary.</li>
+            <li>Used browser-based tools to make abstract ideas visible and testable during class.</li>
+            <li>Documented and organized material so it could be reused or improved later.</li>
+          </ul>
+
+          <h3>Examples of Tools and Activities</h3>
+          <table class="challenge-table">
+            <thead>
+              <tr>
+                <th>Area</th>
+                <th>What I used or prepared</th>
+                <th>What it demonstrated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lesson material</td>
+                <td>Slides, explanations, examples, and guided classroom tasks.</td>
+                <td>Planning, communication, and adapting technical content for pupils.</td>
+              </tr>
+              <tr>
+                <td>AI demo</td>
+                <td>
+                  <a href="https://quickdraw.withgoogle.com/">Google Quick, Draw!</a>
+                  as a fast classroom example where pupils draw and a neural
+                  network tries to guess the object.
+                </td>
+                <td>Pattern recognition, training data, mistakes, ambiguity</td>
+              </tr>
+              <tr>
+                <td>AI exercise</td>
+                <td>
+                  <a href="https://teachablemachine.withgoogle.com/">Google Teachable Machine</a>
+                  to collect examples, train a small model, and test how it
+                  reacts to new images, sounds, or poses.
+                </td>
+                <td>Classes, examples, model training, testing, bias</td>
+              </tr>
+              <tr>
+                <td>Classroom support</td>
+                <td>Help during exercises, questions, troubleshooting, and discussion.</td>
+                <td>Teaching practice, explanation, and working with mixed skill levels.</td>
+              </tr>
+            </tbody>
+          </table>
+
+         
+        </section>
+
+

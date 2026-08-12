@@ -1,0 +1,11 @@
+# Local source materials used to build the curated portfolio.
+*.pptx
+~$*
+PicsFromHackathon/
+
+# Scratch files.
+.codex_tmp/
+
+# Operating system files.
+.DS_Store
+Thumbs.db
